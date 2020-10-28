@@ -2022,11 +2022,8 @@ INSERT INTO `profiles` VALUES (DEFAULT, '100', 'wfeil', 'Espanol');
 INSERT INTO `profiles` VALUES (DEFAULT, '340', 'jewell.funk', 'Franchais');
 
 
-
--- 5000 платежей
-
-
 -- 100 фильмов
+
 
 INSERT INTO `films` VALUES (DEFAULT, 'Quae optio.', '2', 'Aspernatur aut illo et provident est. Labore architecto cupiditate dolores. Et itaque ex minus omnis nihil et.', '1981-03-10', '1.00', 146, '1974-06-15 16:10:48');
 INSERT INTO `films` VALUES (DEFAULT, 'Similique quo.', '1', 'Nihil rerum iusto sint modi quas. Recusandae quia a velit fugit. Necessitatibus suscipit quaerat nostrum tenetur rerum. At et ut vero inventore voluptatem sint.', '1972-02-20', '2.00', 184, '2003-06-06 09:46:41');
@@ -3036,6 +3033,10 @@ INSERT INTO `language_subtitle_of_film` VALUES (DEFAULT, '53', 'Espanol', 'http:
 INSERT INTO `language_subtitle_of_film` VALUES (DEFAULT, '97', 'English', 'http://spencer.net/');
 INSERT INTO `language_subtitle_of_film` VALUES (DEFAULT, '49', 'Deutsch', 'http://ankundingkertzmann.net/');
 INSERT INTO `language_subtitle_of_film` VALUES (DEFAULT, '6', 'Polski', 'http://www.halvorson.net/');
+
+
+-- 5000 платежей
+
 
 INSERT INTO `payment` VALUES (DEFAULT, '275', 'Other', '999.99', '1984-07-18 02:48:06');
 INSERT INTO `payment` VALUES (DEFAULT, '380', 'Mastercard', '146.40', '1986-06-01 19:26:43');
