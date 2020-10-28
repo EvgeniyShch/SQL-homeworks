@@ -45,7 +45,7 @@ CREATE TABLE `users` (
   UNIQUE KEY `phone` (`phone`),
   KEY `details_of_subcsription_ind` (`subscription_id`),
   CONSTRAINT `details_of_subcsription_ind` FOREIGN KEY (`subscription_id`) REFERENCES `details_of_subcsription` (`subcsription_id`) ON DELETE RESTRICT ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Пользователь';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Аккаунт пользователя';
 
 
 DROP TABLE IF EXISTS `payment`;
@@ -71,7 +71,7 @@ CREATE TABLE `profiles` (
   UNIQUE KEY `profile_id` (`profile_id`),
   KEY `account_profile_ind` (`account`),
   CONSTRAINT `account_profile_ind` FOREIGN KEY (`account`) REFERENCES `users` (`account_id`) ON DELETE RESTRICT ON UPDATE CASCADE 
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Настройки профиля';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Профили аккаунта';
 
 
 DROP TABLE IF EXISTS `films`;
